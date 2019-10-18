@@ -1,4 +1,3 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
   var x = document.getElementById("characterLinks");
   if (x.style.display === "block") {
@@ -28,11 +27,25 @@ fetch(url2)
 	})
 	.catch(err => console.log(err))
 
-	const walter = document.querySelector(".walter")
-	walter.addEventListner("click", function(evt) {
-		evt.preventefault();
+	const walter = document.querySelector("#walter")
+	walter.addEventListener("click", function(evt) {
+		evt.preventDefault();
 		console.log(evt);
 		console.log("Meth Time.")
+	})
+
+	const gus = document.querySelector("#gus")
+	gus.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		console.log(evt);
+		console.log("Los Pollos Hermanos.")
+	})
+
+	const saul = document.querySelector("#saul")
+	saul.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		console.log(evt);
+		console.log("Better call Saul!")
 	})
 
 // const url2 = "https://pokeapi.co/api/v2/berry/"

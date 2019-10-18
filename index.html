@@ -8,23 +8,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-  	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-
-<!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="#home" class="active">Breaking Bad</a>
-  <!-- Navigation links (hidden by default) -->
+  <li href="#home" class="active">Breaking Bad</li>
+  
   <div id="characterLinks">
-  	<!-- <ul> -->
-    <a class="walter" href="#news">Walter White</a>
-    <a href="#contact">Gus Fring</a>
-    <a href="#about">Saul Goodman</a>
-	<!-- </ul> -->
+  	<ul>
+    <li id="walter">Walter White</li>
+    <li id="gus">Gus Fring</li>
+    <li id="saul">Saul Goodman</li>
+	</ul>
   </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <li href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
-  </a>
+  </li>
 </div>
   <script src="script.js"></script>
   <footer></footer>

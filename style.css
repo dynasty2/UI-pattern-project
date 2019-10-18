@@ -4,7 +4,6 @@ body {
   background-size: cover;
 }
 
-/* Style the navigation menu */
 .topnav {
   overflow: hidden;
  /* background-color: #333;*/
@@ -12,13 +11,11 @@ body {
   position: relative;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #characterLinks {
   display: none;
 }
 
-/* Style navigation menu links */
-.topnav a {
+.topnav li {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -26,8 +23,7 @@ body {
   display: block;
 }
 
-/* Style the hamburger menu */
-.topnav a.icon {
+.topnav li.icon {
   background: black;
   display: block;
   position: absolute;
@@ -36,14 +32,12 @@ body {
   border-left: 1px solid white; 
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
+.topnav li:hover {
   /*background-color: #ddd;*/
   background-color: rgb(215,197,70);
   color: black;
 }
 
-/* Style the active link (or home/logo) */
 .active {
   /*background-color: #4CAF50;*/
   background-color: black;
