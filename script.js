@@ -18,6 +18,23 @@ fetch(url)
 	})
 	.catch(err => console.log(err))
 
+	const url2 = "https://www.breakingbadapi.com/api/characters/1"
+// const x = document.querySelector("")
+
+fetch(url2)
+	.then(res => res.json())
+	.then(res => {
+		console.log(res)
+	})
+	.catch(err => console.log(err))
+
+	const walter = document.querySelector(".walter")
+	walter.addEventListner("click", function(evt) {
+		evt.preventefault();
+		console.log(evt);
+		console.log("Meth Time.")
+	})
+
 // const url2 = "https://pokeapi.co/api/v2/berry/"
 // const ul = document.querySelector("ul")
 
