@@ -7,7 +7,7 @@ function myFunction() {
   }
 }
 
-const url = "https://www.breakingbadapi.com/api/characters"
+const url = "https://swapi.co/api/people/"
 // const x = document.querySelector("")
 
 fetch(url)
@@ -17,35 +17,69 @@ fetch(url)
 	})
 	.catch(err => console.log(err))
 
-	const url2 = "https://www.breakingbadapi.com/api/characters/1"
-// const x = document.querySelector("")
+const url2 = "https://swapi.co/api/people/1/"
 
 fetch(url2)
 	.then(res => res.json())
 	.then(res => {
 		console.log(res)
+		let p = document.querySelector(".walterP")
+			p.innerText = res.name;
+			console.log(res.name);
 	})
 	.catch(err => console.log(err))
 
-	const walter = document.querySelector("#walter")
+const url3 = "https://swapi.co/api/people/2/"
+
+fetch(url3)
+	.then(res => res.json())
+	.then(res => {
+		console.log(res)
+		let p = document.querySelector(".gusP")
+			p.innerText = res.name;
+			console.log(res.name);
+	})
+	.catch(err => console.log(err))
+
+const url4 = "https://swapi.co/api/people/10/"
+
+fetch(url4)
+	.then(res => res.json())
+	.then(res => {
+		console.log(res)
+		let p = document.querySelector(".saulP")
+			p.innerText = res.name;
+			console.log(res.name);
+	})
+	.catch(err => console.log(err))
+
+
+	const walter = document.querySelector(".walter")
 	walter.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		console.log(evt);
 		console.log("Meth Time.")
+		const walterInfo = document.querySelector(".walter-info");
+		walterInfo.style.opacity = 1;
+
 	})
 
-	const gus = document.querySelector("#gus")
+	const gus = document.querySelector(".gus")
 	gus.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		console.log(evt);
 		console.log("Los Pollos Hermanos.")
+		const gusInfo = document.querySelector(".gus-info");
+		gusInfo.style.opacity = 1;
 	})
 
-	const saul = document.querySelector("#saul")
+	const saul = document.querySelector(".saul")
 	saul.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		console.log(evt);
 		console.log("Better call Saul!")
+		const saulInfo = document.querySelector(".saul-info");
+		saulInfo.style.opacity = 1;
 	})
 
 // const url2 = "https://pokeapi.co/api/v2/berry/"

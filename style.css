@@ -53,10 +53,41 @@ body {
 
 .walter-info {
   height: 90vh;
+  width: 98vw;
+  background-color: rgba(0,0,0);
+  opacity: 0;
+  position: absolute;
+  color: white;
+}
+
+.gus-info {
+  height: 90vh;
   width: 98.33vw;
   background-color: rgba(0,0,0);
-  opacity: .8;
+  opacity: 0;
   position: absolute;
+  color: white;
+}
+
+.saul-info {
+  height: 90vh;
+  width: 98.33vw;
+  background-color: rgba(0,0,0);
+  opacity: 0;
+  position: absolute;
+  color: white;
+}
+
+.walterP {
+  text-align: center;
+}
+
+.gusP {
+  text-align: center;
+}
+
+.saulP {
+  text-align: center;
 }
 
 footer {
