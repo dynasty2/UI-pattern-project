@@ -8,7 +8,6 @@ function myFunction() {
 }
 
 const url = "https://swapi.co/api/people/"
-// const x = document.querySelector("")
 
 fetch(url)
 	.then(res => res.json())
