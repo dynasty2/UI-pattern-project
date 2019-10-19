@@ -1,17 +1,22 @@
 body {
-  background-image: url("https://i.imgur.com/tlIDyqD.jpg");
-/*  height: 100vh;
+  background-image: url("https://i.imgur.com/b8adxNT.jpg");
+  /*height: 100vh;
   width: 100vw;*/
-  /*background-repeat: no-repeat;*/
-  background-size: cover;
+/*  background-repeat: no-repeat;
+  background-size: cover;*/
   opacity: 1;
   position: relative;
 }
 
+header {
+/*  height: ;
+  width: 100%;
+  background-image: url("https://i.imgur.com/b8adxNT.jpg");*/
+}
+
 .topnav {
-  overflow: hidden;
  /* background-color: #333;*/
-  background-color: rgb(58,84,62);
+  background-color: rgba(0,0,0,.7);
   position: relative;
 /*  margin-left: -10px
   margin-right -10px;*/
@@ -41,7 +46,7 @@ body {
 
 .topnav li:hover {
   /*background-color: #ddd;*/
-  background-color: rgb(215,197,70);
+  background-color: rgb(186,230,237);
   color: black;
 }
 
@@ -49,6 +54,7 @@ body {
   /*background-color: #4CAF50;*/
   background-color: black;
   color: white;
+ /* opacity: .8;*/
 }
 
 .walter-info {
