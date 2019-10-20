@@ -16,12 +16,13 @@ header {
 
 .topnav {
  /* background-color: #333;*/
-  /*background-color: rgba(0,0,0,1);*/
-  background-color: rgba(58,84,62,.8);
+  background-color: rgba(0,0,0,.8);
+  /*background-color: rgba(58,84,62,.8);*/
   position: relative;
 /*  margin-left: -10px
   margin-right -10px;*/
   width: 100%;
+  margin-bottom: -16px;
 }
 
 .topnav #characterLinks {
@@ -56,6 +57,7 @@ header {
   /*background-color: rgb(186,230,237);*/
   background-color: rgb(215,197,70);
   color: black;
+  /*opacity: .8;*/
 }
 
 .active {
@@ -68,7 +70,7 @@ header {
 
 .walter-info {
   height: 90vh;
-  width: 98vw;
+  width: 98.3vw;
   background-color: rgba(0,0,0,.8);
   opacity: 0;
   position: absolute;
@@ -77,7 +79,7 @@ header {
 
 .gus-info {
   height: 90vh;
-  width: 98vw;
+  width: 98.3vw;
   background-color: rgba(0,0,0,.8);
   opacity: 0;
   position: absolute;
@@ -86,7 +88,7 @@ header {
 
 .saul-info {
   height: 90vh;
-  width: 98vw;
+  width: 98.3vw;
   background-color: rgba(0,0,0,.8);
   opacity: 0;
   position: absolute;
@@ -97,24 +99,43 @@ header {
   text-align: center;
 }
 
-#w-home {
-  margin-left: 20px;
+#w-image {
+  display: block;
+  margin: 0 auto;
 }
+
+/*#w-home {
+  margin-left: 20px;
+}*/
 
 .gusP {
   text-align: center;
 }
 
-#g-home {
-  margin-left: 20px;
+#g-image {
+  display: block;
+  margin: 0 auto;
 }
+
+/*#g-home {
+  margin-left: 20px;
+}*/
 
 .saulP {
   text-align: center;
 }
 
-#s-home {
+#s-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/*#s-home {
   margin-left: 20px;
+}*/
+
+.content {
+  margin-left: 10%;
 }
 
 footer {

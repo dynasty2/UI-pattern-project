@@ -27,6 +27,10 @@ fetch(url2)
 			p.innerText = res[0].name;
 		let wh = document.querySelector("#w-home")
 			wh.innerText = res[0].nickname;
+		let wl = document.querySelector("#w-life")
+			wl.innerText = res[0].status
+		let wi = document.querySelector("#w-image")
+			wi.setAttribute("src", res[0].img);
 			console.log(res[0].name);
 	})
 	.catch(err => console.log(err))
@@ -54,6 +58,10 @@ fetch(url3)
 			p.innerText = res[0].name;
 		let gh = document.querySelector("#g-home")
 			gh.innerText = res[0].nickname
+		let gl = document.querySelector("#g-life")
+			gl.innerText = res[0].status
+		let gi = document.querySelector("#g-image")
+			gi.setAttribute("src", res[0].img);
 			console.log(res[0].name);
 	})
 	.catch(err => console.log(err))
@@ -82,6 +90,10 @@ fetch(url4)
 			p.innerText = res[0].name;
 		let sh =document.querySelector("#s-home")
 			sh.innerText = res[0].nickname;
+		let sl = document.querySelector("#s-life")
+			sl.innerText = res[0].status
+		let si = document.querySelector("#s-image")
+			si.setAttribute("src", res[0].img);
 			console.log(res[0].name);
 	})
 	.catch(err => console.log(err))
