@@ -1,9 +1,9 @@
 body {
-  background-image: url("https://i.imgur.com/b8adxNT.jpg");
+  background-image: url("https://i.imgur.com/tlIDyqD.jpg");
   /*height: 100vh;
   width: 100vw;*/
-/*  background-repeat: no-repeat;
-  background-size: cover;*/
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   position: relative;
 }
@@ -16,7 +16,8 @@ header {
 
 .topnav {
  /* background-color: #333;*/
-  background-color: rgba(0,0,0,1);
+  /*background-color: rgba(0,0,0,1);*/
+  background-color: rgba(58,84,62,.8);
   position: relative;
 /*  margin-left: -10px
   margin-right -10px;*/
@@ -52,7 +53,8 @@ header {
 
 .topnav li:hover {
   /*background-color: #ddd;*/
-  background-color: rgb(186,230,237);
+  /*background-color: rgb(186,230,237);*/
+  background-color: rgb(215,197,70);
   color: black;
 }
 
@@ -60,7 +62,7 @@ header {
   /*background-color: #4CAF50;*/
   background-color: black;
   color: white;
-  width: 10%;
+  width: 92%;
  /* opacity: 0;*/
 }
 

@@ -7,7 +7,7 @@ function myFunction() {
   }
 }
 
-const url = "https://swapi.co/api/people/"
+const url = "https://www.breakingbadapi.com/api/"
 
 fetch(url)
 	.then(res => res.json())
@@ -17,15 +17,15 @@ fetch(url)
 	.catch(err => console.log(err))
 
 ///***///
-const url2 = "https://swapi.co/api/people/1/"
+const url2 = "https://www.breakingbadapi.com/api/characters/1"
 
 fetch(url2)
 	.then(res => res.json())
 	.then(res => {
 		console.log(res)
 		let p = document.querySelector(".walterP")
-			p.innerText = res.name;
-			console.log(res.name);
+			p.innerText = res[0].name;
+			console.log(res[0].name);
 	})
 	.catch(err => console.log(err))
 
@@ -42,29 +42,31 @@ fetch(url5)
 	.catch(err => console.log(err))
 
 ///***///
-const url3 = "https://swapi.co/api/people/3/"
+const url3 = "https://www.breakingbadapi.com/api/characters?name=Gustavo+Fring"
 
 fetch(url3)
 	.then(res => res.json())
 	.then(res => {
 		console.log(res)
 		let p = document.querySelector(".gusP")
-			p.innerText = res.name;
-			console.log(res.name);
+			p.innerText = res[0].name;
+		let gh = document.querySelector("#g-home")
+			gh.innerText = res[0].nickname
+			console.log(res[0].name);
 	})
 	.catch(err => console.log(err))
 
 const url6 = "https://swapi.co/api/planets/8/"
 
-fetch(url6)
-	.then(res => res.json())
-	.then(res => {
-		console.log(res)
-		let gh =document.querySelector("#g-home")
-			gh.innerText =res.name;
-			console.log(res.name);
-	})
-	.catch(err => console.log(err))
+// fetch(url6)
+// 	.then(res => res.json())
+// 	.then(res => {
+// 		console.log(res)
+// 		let gh =document.querySelector("#g-home")
+// 			gh.innerText =res.name;
+// 			console.log(res.name);
+// 	})
+// 	.catch(err => console.log(err))
 
 //**//
 
