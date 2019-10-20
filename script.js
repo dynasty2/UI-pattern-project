@@ -25,21 +25,23 @@ fetch(url2)
 		console.log(res)
 		let p = document.querySelector(".walterP")
 			p.innerText = res[0].name;
+		let wh = document.querySelector("#w-home")
+			wh.innerText = res[0].nickname;
 			console.log(res[0].name);
 	})
 	.catch(err => console.log(err))
 
-const url5 = "https://swapi.co/api/planets/1/"
+// const url5 = "https://swapi.co/api/planets/1/"
 
-fetch(url5)
-	.then(res => res.json())
-	.then(res => {
-		console.log(res)
-		let wh = document.querySelector("#w-home")
-			wh.innerText = res.name;
-			console.log(res.name);
-	})
-	.catch(err => console.log(err))
+// fetch(url5)
+// 	.then(res => res.json())
+// 	.then(res => {
+// 		console.log(res)
+// 		let wh = document.querySelector("#w-home")
+// 			wh.innerText = res.name;
+// 			console.log(res.name);
+// 	})
+// 	.catch(err => console.log(err))
 
 ///***///
 const url3 = "https://www.breakingbadapi.com/api/characters?name=Gustavo+Fring"
@@ -56,7 +58,7 @@ fetch(url3)
 	})
 	.catch(err => console.log(err))
 
-const url6 = "https://swapi.co/api/planets/8/"
+// const url6 = "https://swapi.co/api/planets/8/"
 
 // fetch(url6)
 // 	.then(res => res.json())
@@ -70,29 +72,31 @@ const url6 = "https://swapi.co/api/planets/8/"
 
 //**//
 
-const url4 = "https://swapi.co/api/people/10/"
+const url4 = "https://www.breakingbadapi.com/api/characters?name=Saul+Goodman"
 
 fetch(url4)
 	.then(res => res.json())
 	.then(res => {
 		console.log(res)
 		let p = document.querySelector(".saulP")
-			p.innerText = res.name;
-			console.log(res.name);
+			p.innerText = res[0].name;
+		let sh =document.querySelector("#s-home")
+			sh.innerText = res[0].nickname;
+			console.log(res[0].name);
 	})
 	.catch(err => console.log(err))
 
-const url7 = "https://swapi.co/api/planets/20/"
+// const url7 = "https://swapi.co/api/planets/20/"
 
-fetch(url7)
-	.then(res => res.json())
-	.then(res => {
-		console.log(res)
-		let sh = document.querySelector("#s-home")
-			sh.innerText = res.name;
-			console.log(res.name);
-	})
-	.catch(err => console.log(err))
+// fetch(url7)
+// 	.then(res => res.json())
+// 	.then(res => {
+// 		console.log(res)
+// 		let sh = document.querySelector("#s-home")
+// 			sh.innerText = res.name;
+// 			console.log(res.name);
+// 	})
+// 	.catch(err => console.log(err))
 
 	//**//
 
