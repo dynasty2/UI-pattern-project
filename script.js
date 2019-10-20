@@ -16,6 +16,7 @@ fetch(url)
 	})
 	.catch(err => console.log(err))
 
+///***///
 const url2 = "https://swapi.co/api/people/1/"
 
 fetch(url2)
@@ -28,7 +29,20 @@ fetch(url2)
 	})
 	.catch(err => console.log(err))
 
-const url3 = "https://swapi.co/api/people/2/"
+const url5 = "https://swapi.co/api/planets/1/"
+
+fetch(url5)
+	.then(res => res.json())
+	.then(res => {
+		console.log(res)
+		let wh = document.querySelector("#w-home")
+			wh.innerText = res.name;
+			console.log(res.name);
+	})
+	.catch(err => console.log(err))
+
+///***///
+const url3 = "https://swapi.co/api/people/3/"
 
 fetch(url3)
 	.then(res => res.json())
@@ -39,6 +53,20 @@ fetch(url3)
 			console.log(res.name);
 	})
 	.catch(err => console.log(err))
+
+const url6 = "https://swapi.co/api/planets/8/"
+
+fetch(url6)
+	.then(res => res.json())
+	.then(res => {
+		console.log(res)
+		let gh =document.querySelector("#g-home")
+			gh.innerText =res.name;
+			console.log(res.name);
+	})
+	.catch(err => console.log(err))
+
+//**//
 
 const url4 = "https://swapi.co/api/people/10/"
 
@@ -52,6 +80,19 @@ fetch(url4)
 	})
 	.catch(err => console.log(err))
 
+const url7 = "https://swapi.co/api/planets/20/"
+
+fetch(url7)
+	.then(res => res.json())
+	.then(res => {
+		console.log(res)
+		let sh = document.querySelector("#s-home")
+			sh.innerText = res.name;
+			console.log(res.name);
+	})
+	.catch(err => console.log(err))
+
+	//**//
 
 	const walter = document.querySelector(".walter")
 	walter.addEventListener("click", function(evt) {
