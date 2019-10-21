@@ -5,6 +5,12 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
+  // const saulInfo = document.querySelector(".saul-info");
+		// const walterInfo = document.querySelector(".walter-info");
+		// const gusInfo = document.querySelector(".gus-info");
+		// saulInfo.style.opacity = 0;
+		// walterInfo.style.opacity = 0;
+		// gusInfo.style.opacity = 0;
 }
 
 const url = "https://www.breakingbadapi.com/api/"
@@ -136,7 +142,7 @@ fetch(url4)
 		const saulInfo = document.querySelector(".saul-info");
 		gusInfo.style.opacity = 1;
 		walterInfo.style.opacity = 0;
-		saulInfo.styla.opacity = 0;
+		saulInfo.style.opacity = 0;
 	})
 
 	const saul = document.querySelector(".saul")
@@ -150,6 +156,20 @@ fetch(url4)
 		saulInfo.style.opacity = 1;
 		walterInfo.style.opacity = 0;
 		gusInfo.style.opacity = 0;
+	})
+
+	const home = document.querySelector(".active")
+	home.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		console.log(evt);
+		console.log("home")
+		const walterInfo = document.querySelector(".walter-info");
+		const gusInfo = document.querySelector(".gus-info");
+		const saulInfo = document.querySelector(".saul-info");
+		walterInfo.style.opacity = 0;
+		gusInfo.style.opacity = 0;
+		saulInfo.style.opacity = 0;
+
 	})
 
 // const url2 = "https://pokeapi.co/api/v2/berry/"
