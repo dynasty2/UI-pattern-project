@@ -18,4 +18,8 @@ First I chose an interesting API.  With the hit show Breaking Bad in mind, I beg
 - Javascript
 - The Breaking Bad API
 
+**Contribution**
+
+One Challenge I experienced during this project was when the Breaking Bad API stopped working.  Has anyone ever experienced that problem.  How did you go about project completion afterward?
+
 
