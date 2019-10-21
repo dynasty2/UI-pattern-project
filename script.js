@@ -118,7 +118,11 @@ fetch(url4)
 		console.log(evt);
 		console.log("Meth Time.")
 		const walterInfo = document.querySelector(".walter-info");
+		const gusInfo = document.querySelector(".gus-info");
+		const saulInfo = document.querySelector(".saul-info");
 		walterInfo.style.opacity = 1;
+		gusInfo.style.opacity = 0;
+		saulInfo.style.opacity = 0;
 
 	})
 
@@ -128,7 +132,11 @@ fetch(url4)
 		console.log(evt);
 		console.log("Los Pollos Hermanos.")
 		const gusInfo = document.querySelector(".gus-info");
+		const walterInfo = document.querySelector(".walter-info");
+		const saulInfo = document.querySelector(".saul-info");
 		gusInfo.style.opacity = 1;
+		walterInfo.style.opacity = 0;
+		saulInfo.styla.opacity = 0;
 	})
 
 	const saul = document.querySelector(".saul")
@@ -137,7 +145,11 @@ fetch(url4)
 		console.log(evt);
 		console.log("Better call Saul!")
 		const saulInfo = document.querySelector(".saul-info");
+		const walterInfo = document.querySelector(".walter-info");
+		const gusInfo = document.querySelector(".gus-info");
 		saulInfo.style.opacity = 1;
+		walterInfo.style.opacity = 0;
+		gusInfo.style.opacity = 0;
 	})
 
 // const url2 = "https://pokeapi.co/api/v2/berry/"
